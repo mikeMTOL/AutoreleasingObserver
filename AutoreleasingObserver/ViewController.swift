@@ -10,9 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let queue = NSOperationQueue()
+    var count = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // send notification every 100ms
+        queue.addOperationWithBlock { 
+            repeat {
+                self.postNotification(someNotification, object: "count \(self.count)")
+                self.count += 1
+                NSThread.sleepForTimeInterval(0.1)
+            } while true
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
