@@ -12,28 +12,9 @@
 		27678C641CD337DA00EA1B8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27678C621CD337DA00EA1B8B /* Main.storyboard */; };
 		27678C661CD337DA00EA1B8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27678C651CD337DA00EA1B8B /* Assets.xcassets */; };
 		27678C691CD337DA00EA1B8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27678C671CD337DA00EA1B8B /* LaunchScreen.storyboard */; };
-		27678C741CD337DA00EA1B8B /* AutoreleasingObserverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27678C731CD337DA00EA1B8B /* AutoreleasingObserverTests.swift */; };
-		27678C7F1CD337DA00EA1B8B /* AutoreleasingObserverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27678C7E1CD337DA00EA1B8B /* AutoreleasingObserverUITests.swift */; };
 		27678C8D1CD337ED00EA1B8B /* AutoreleasingObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27678C8C1CD337ED00EA1B8B /* AutoreleasingObserver.swift */; };
 		27678C8F1CD3381800EA1B8B /* ListeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27678C8E1CD3381800EA1B8B /* ListeningViewController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		27678C701CD337DA00EA1B8B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 27678C531CD337DA00EA1B8B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 27678C5A1CD337DA00EA1B8B;
-			remoteInfo = AutoreleasingObserver;
-		};
-		27678C7B1CD337DA00EA1B8B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 27678C531CD337DA00EA1B8B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 27678C5A1CD337DA00EA1B8B;
-			remoteInfo = AutoreleasingObserver;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		27678C5B1CD337DA00EA1B8B /* AutoreleasingObserver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoreleasingObserver.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,32 +24,16 @@
 		27678C651CD337DA00EA1B8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27678C681CD337DA00EA1B8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27678C6A1CD337DA00EA1B8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		27678C6F1CD337DA00EA1B8B /* AutoreleasingObserverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoreleasingObserverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27678C731CD337DA00EA1B8B /* AutoreleasingObserverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoreleasingObserverTests.swift; sourceTree = "<group>"; };
 		27678C751CD337DA00EA1B8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		27678C7A1CD337DA00EA1B8B /* AutoreleasingObserverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoreleasingObserverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27678C7E1CD337DA00EA1B8B /* AutoreleasingObserverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoreleasingObserverUITests.swift; sourceTree = "<group>"; };
 		27678C801CD337DA00EA1B8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		27678C8C1CD337ED00EA1B8B /* AutoreleasingObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoreleasingObserver.swift; sourceTree = "<group>"; };
+		27678C8C1CD337ED00EA1B8B /* AutoreleasingObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoreleasingObserver.swift; path = ../AutoreleasingObserver.swift; sourceTree = "<group>"; };
 		27678C8E1CD3381800EA1B8B /* ListeningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListeningViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		27678C581CD337DA00EA1B8B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		27678C6C1CD337DA00EA1B8B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		27678C771CD337DA00EA1B8B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -92,8 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				27678C5B1CD337DA00EA1B8B /* AutoreleasingObserver.app */,
-				27678C6F1CD337DA00EA1B8B /* AutoreleasingObserverTests.xctest */,
-				27678C7A1CD337DA00EA1B8B /* AutoreleasingObserverUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,42 +114,6 @@
 			productReference = 27678C5B1CD337DA00EA1B8B /* AutoreleasingObserver.app */;
 			productType = "com.apple.product-type.application";
 		};
-		27678C6E1CD337DA00EA1B8B /* AutoreleasingObserverTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 27678C861CD337DA00EA1B8B /* Build configuration list for PBXNativeTarget "AutoreleasingObserverTests" */;
-			buildPhases = (
-				27678C6B1CD337DA00EA1B8B /* Sources */,
-				27678C6C1CD337DA00EA1B8B /* Frameworks */,
-				27678C6D1CD337DA00EA1B8B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				27678C711CD337DA00EA1B8B /* PBXTargetDependency */,
-			);
-			name = AutoreleasingObserverTests;
-			productName = AutoreleasingObserverTests;
-			productReference = 27678C6F1CD337DA00EA1B8B /* AutoreleasingObserverTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		27678C791CD337DA00EA1B8B /* AutoreleasingObserverUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 27678C891CD337DA00EA1B8B /* Build configuration list for PBXNativeTarget "AutoreleasingObserverUITests" */;
-			buildPhases = (
-				27678C761CD337DA00EA1B8B /* Sources */,
-				27678C771CD337DA00EA1B8B /* Frameworks */,
-				27678C781CD337DA00EA1B8B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				27678C7C1CD337DA00EA1B8B /* PBXTargetDependency */,
-			);
-			name = AutoreleasingObserverUITests;
-			productName = AutoreleasingObserverUITests;
-			productReference = 27678C7A1CD337DA00EA1B8B /* AutoreleasingObserverUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,14 +126,7 @@
 				TargetAttributes = {
 					27678C5A1CD337DA00EA1B8B = {
 						CreatedOnToolsVersion = 7.3;
-					};
-					27678C6E1CD337DA00EA1B8B = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = 27678C5A1CD337DA00EA1B8B;
-					};
-					27678C791CD337DA00EA1B8B = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = 27678C5A1CD337DA00EA1B8B;
+						DevelopmentTeam = RT4NRJPHW3;
 					};
 				};
 			};
@@ -224,8 +144,6 @@
 			projectRoot = "";
 			targets = (
 				27678C5A1CD337DA00EA1B8B /* AutoreleasingObserver */,
-				27678C6E1CD337DA00EA1B8B /* AutoreleasingObserverTests */,
-				27678C791CD337DA00EA1B8B /* AutoreleasingObserverUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,20 +156,6 @@
 				27678C691CD337DA00EA1B8B /* LaunchScreen.storyboard in Resources */,
 				27678C661CD337DA00EA1B8B /* Assets.xcassets in Resources */,
 				27678C641CD337DA00EA1B8B /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		27678C6D1CD337DA00EA1B8B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		27678C781CD337DA00EA1B8B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,36 +173,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		27678C6B1CD337DA00EA1B8B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				27678C741CD337DA00EA1B8B /* AutoreleasingObserverTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		27678C761CD337DA00EA1B8B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				27678C7F1CD337DA00EA1B8B /* AutoreleasingObserverUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		27678C711CD337DA00EA1B8B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 27678C5A1CD337DA00EA1B8B /* AutoreleasingObserver */;
-			targetProxy = 27678C701CD337DA00EA1B8B /* PBXContainerItemProxy */;
-		};
-		27678C7C1CD337DA00EA1B8B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 27678C5A1CD337DA00EA1B8B /* AutoreleasingObserver */;
-			targetProxy = 27678C7B1CD337DA00EA1B8B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		27678C621CD337DA00EA1B8B /* Main.storyboard */ = {
@@ -409,6 +284,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AutoreleasingObserver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mike.AutoreleasingObserver;
@@ -420,56 +296,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AutoreleasingObserver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mike.AutoreleasingObserver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		27678C871CD337DA00EA1B8B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = AutoreleasingObserverTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mike.AutoreleasingObserverTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoreleasingObserver.app/AutoreleasingObserver";
-			};
-			name = Debug;
-		};
-		27678C881CD337DA00EA1B8B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = AutoreleasingObserverTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mike.AutoreleasingObserverTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoreleasingObserver.app/AutoreleasingObserver";
-			};
-			name = Release;
-		};
-		27678C8A1CD337DA00EA1B8B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = AutoreleasingObserverUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mike.AutoreleasingObserverUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = AutoreleasingObserver;
-			};
-			name = Debug;
-		};
-		27678C8B1CD337DA00EA1B8B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = AutoreleasingObserverUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mike.AutoreleasingObserverUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = AutoreleasingObserver;
 			};
 			name = Release;
 		};
@@ -492,22 +323,7 @@
 				27678C851CD337DA00EA1B8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		27678C861CD337DA00EA1B8B /* Build configuration list for PBXNativeTarget "AutoreleasingObserverTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				27678C871CD337DA00EA1B8B /* Debug */,
-				27678C881CD337DA00EA1B8B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		27678C891CD337DA00EA1B8B /* Build configuration list for PBXNativeTarget "AutoreleasingObserverUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				27678C8A1CD337DA00EA1B8B /* Debug */,
-				27678C8B1CD337DA00EA1B8B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
