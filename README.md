@@ -5,7 +5,28 @@ Autoreleasing NSNotification observers in swift
 Copy AutoreleasingObserver.swift to your project
 
 # Usage
-use `registerObserver` function and forget to `removeObserver` in `deinit`
+There are two ways to create auto-releasing NSNotificationCenter observers with completion blocks
+1- Use NSNotificationCenter extension's function: `addReleasingObserverForName`
+2- Use convenience init of NotificationObserver class
 
+NOTE: You must save the returned object in a strong referenced instance variable within it's parent class.. Please look at example code below
+example:
+```swift
+class ViewController:UIViewController {
+	
+	// instance variable that will hold your notification
+	var observer:NotificationObserver? = nil
+	
+	override viewDidLoad() {
+        super.viewDidLoad()
+
+        // register for notifications.. dont remove observer on deinit
+        // it's autoreleasing
+        observer = NSNotificationCenter.defaultCenter().addReleasingObserverForName(someNotification) { [weak self](notification) in
+            self?.label.text = notification.object as? String
+        }	
+	}
+}
+```
 # License
 MIT

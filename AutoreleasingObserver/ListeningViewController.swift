@@ -13,15 +13,16 @@ class ListeningViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
     
-    var observer:[NotificationObserver] = []
+    var observer:NotificationObserver? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // register for notifications.. dont remove observer on deinit
         // it's autoreleasing
-        observer.append(NotificationObserver(notifcationName: someNotification) { [weak self](notification) in
+        observer = NSNotificationCenter.defaultCenter().addReleasingObserverForName(someNotification) { [weak self](notification) in
             self?.label.text = notification.object as? String
-        })
+        }
         
     }
 
