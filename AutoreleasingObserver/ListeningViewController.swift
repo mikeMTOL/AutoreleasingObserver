@@ -20,8 +20,8 @@ class ListeningViewController: UIViewController {
 
         // register for notifications.. dont remove observer on deinit
         // it's autoreleasing
-        observer = NSNotificationCenter.defaultCenter().notificationObserverForName(someNotification) { [weak self](notification) in
-            self?.label.text = notification.object as? String
+        observer = NSNotificationCenter.defaultCenter().notificationObserverForName(someNotification) { [unowned self](notification) in
+            self.label.text = notification.object as? String
         }
         
     }
