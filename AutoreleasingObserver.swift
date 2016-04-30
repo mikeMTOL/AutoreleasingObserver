@@ -26,7 +26,7 @@ class NotificationObserver:NSObject {
 }
 
 extension NSNotificationCenter {
-    func addReleasingObserverForName(notifcationName:String, object: AnyObject? = nil, queue: NSOperationQueue = NSOperationQueue.mainQueue(), usingBlock: (NSNotification) -> Void) -> NotificationObserver {
+    func notificationObserverForName(notifcationName:String, object: AnyObject? = nil, queue: NSOperationQueue = NSOperationQueue.mainQueue(), usingBlock: (NSNotification) -> Void) -> NotificationObserver {
         let observer = NSNotificationCenter.defaultCenter().addObserverForName(notifcationName, object: object, queue: queue, usingBlock: usingBlock)
         return NotificationObserver(observer: observer)
     }
