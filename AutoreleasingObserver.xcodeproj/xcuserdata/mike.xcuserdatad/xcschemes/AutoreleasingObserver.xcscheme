@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "27B683981CD488FC00BAB1C8"
+               BuildableName = "AutoreleasingObserverTests.xctest"
+               BlueprintName = "AutoreleasingObserverTests"
+               ReferencedContainer = "container:AutoreleasingObserver.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "27678C5A1CD337DA00EA1B8B"
+            BuildableName = "AutoreleasingObserver.app"
+            BlueprintName = "AutoreleasingObserver"
+            ReferencedContainer = "container:AutoreleasingObserver.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
