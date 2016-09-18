@@ -8,7 +8,7 @@
 
 import UIKit
 
-let someNotification = "someNotificationNotification"
+let someNotification = Notification.Name("someNotificationNotification")
 class ListeningViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!

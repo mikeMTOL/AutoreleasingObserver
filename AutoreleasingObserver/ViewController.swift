@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         // send notification every 100ms
         queue.addOperation { 
             repeat {
-                NotificationCenter.default.post(name: Notification.Name(rawValue: someNotification), object: "count \(self.count)")
+                NotificationCenter.default.post(name: someNotification, object: "count \(self.count)")
                 self.count += 1
                 Thread.sleep(forTimeInterval: 0.1)
             } while true
