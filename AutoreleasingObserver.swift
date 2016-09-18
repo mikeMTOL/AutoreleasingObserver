@@ -16,18 +16,18 @@ class NotificationObserver:NSObject {
         super.init()
     }
     
-    convenience init(notifcationName:String, object:AnyObject? = nil, usingBlock:(NSNotification) -> Void) {
-        let observer = NSNotificationCenter.defaultCenter().addObserverForName(notifcationName, object: object, queue: NSOperationQueue.mainQueue(), usingBlock: usingBlock)
+    convenience init(notifcationName:String, object:AnyObject? = nil, usingBlock:@escaping (Notification) -> Void) {
+        let observer = NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: notifcationName), object: object, queue: OperationQueue.main, using: usingBlock)
         self.init(observer: observer)
     }
     deinit {
-        NSNotificationCenter.defaultCenter().removeObserver(observer)
+        NotificationCenter.default.removeObserver(observer)
     }
 }
 
-extension NSNotificationCenter {
-    func notificationObserverForName(notifcationName:String, object: AnyObject? = nil, queue: NSOperationQueue = NSOperationQueue.mainQueue(), usingBlock: (NSNotification) -> Void) -> NotificationObserver {
-        let observer = NSNotificationCenter.defaultCenter().addObserverForName(notifcationName, object: object, queue: queue, usingBlock: usingBlock)
+extension NotificationCenter {
+    func notificationObserverForName(_ notifcationName:String, object: AnyObject? = nil, queue: OperationQueue = OperationQueue.main, usingBlock: @escaping (Notification) -> Void) -> NotificationObserver {
+        let observer = NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: notifcationName), object: object, queue: queue, using: usingBlock)
         return NotificationObserver(observer: observer)
     }
 }

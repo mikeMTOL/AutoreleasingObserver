@@ -10,17 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let queue = NSOperationQueue()
+    let queue = OperationQueue()
     var count = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // send notification every 100ms
-        queue.addOperationWithBlock { 
+        queue.addOperation { 
             repeat {
-                NSNotificationCenter.defaultCenter().postNotificationName(someNotification, object: "count \(self.count)")
+                NotificationCenter.default.post(name: Notification.Name(rawValue: someNotification), object: "count \(self.count)")
                 self.count += 1
-                NSThread.sleepForTimeInterval(0.1)
+                Thread.sleep(forTimeInterval: 0.1)
             } while true
         }
         

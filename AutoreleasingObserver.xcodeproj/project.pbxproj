@@ -154,9 +154,11 @@
 					27678C5A1CD337DA00EA1B8B = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = RT4NRJPHW3;
+						LastSwiftMigration = 0800;
 					};
 					27B683981CD488FC00BAB1C8 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 						TestTargetID = 27678C5A1CD337DA00EA1B8B;
 					};
 				};
@@ -345,6 +347,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mike.AutoreleasingObserver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -357,6 +360,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mike.AutoreleasingObserver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -370,6 +374,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mike.AutoreleasingObserverTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoreleasingObserver.app/AutoreleasingObserver";
 			};
 			name = Debug;
@@ -383,6 +388,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mike.AutoreleasingObserverTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoreleasingObserver.app/AutoreleasingObserver";
 			};
 			name = Release;
@@ -415,6 +421,7 @@
 				27B683A21CD488FC00BAB1C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

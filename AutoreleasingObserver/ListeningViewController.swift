@@ -20,7 +20,7 @@ class ListeningViewController: UIViewController {
 
         // register for notifications.. dont remove observer on deinit
         // it's autoreleasing
-        observer = NSNotificationCenter.defaultCenter().notificationObserverForName(someNotification) { [unowned self](notification) in
+        observer = NotificationCenter.default.notificationObserverForName(someNotification) { [unowned self](notification) in
             self.label.text = notification.object as? String
         }
         
@@ -30,8 +30,8 @@ class ListeningViewController: UIViewController {
         debugPrint("Did deinit")
     }
     
-    @IBAction func closeAction(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func closeAction(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {

@@ -22,10 +22,10 @@ class AutoreleasingObserverTests: XCTestCase {
     }
     
     func testNotifiationObserver() {
-        typealias notification_block = (NSNotification) -> Void
+        typealias notification_block = (Notification) -> Void
         var observer:NotificationObserver?
         
-        weak var objProtocol = NSNotificationCenter.defaultCenter().addObserverForName(UIKeyboardDidShowNotification, object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { (notification) in
+        weak var objProtocol = NotificationCenter.default.addObserver(forName: NSNotification.Name.UIKeyboardDidShow, object: nil, queue: OperationQueue.main, using: { (notification) in
             debugPrint("im here:\(observer)")
         })
         
